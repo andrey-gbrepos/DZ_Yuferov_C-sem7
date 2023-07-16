@@ -25,7 +25,7 @@ WriteLine(String.Join("   ",Aver(Arr)));
 
 WriteLine("-------------------");
 
-double[] Aver(int[,] randAr)//Подсчет среднего арифмитеческого по столбцам
+double[] Aver(int[,] randAr)//Подсчет среднего арифметического по столбцам
 {
 double[] Ar = new double[randAr.GetLength(1)];
 
@@ -43,11 +43,11 @@ for (int i = 0; i < randAr.GetLength(1); i++ )//Перебор столбцов
 
 int [,] NewArr () //генератор двумерного массива
 {
-    int row = 2;
-    int col = 2;
-    row = new Random().Next(2, 11);
+  
+   
+    int row = new Random().Next(2, 11);
                
-    col = new Random().Next(2, 11);
+    int col = new Random().Next(2, 11);
               
     int[,] res = new int[row,col];
     for (int i = 0; i < row; i++)
