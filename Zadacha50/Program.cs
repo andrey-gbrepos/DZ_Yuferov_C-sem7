@@ -32,10 +32,9 @@ else {Console.WriteLine($"Такого элемента нет");}
 
 bool InOrOut (int[,] MainAr, int[] position) // Проверка позиции: входит в массив или не входит
 {
-    bool i = true;
 if (position[0] > MainAr.GetLength(0) -1 || position[1] > MainAr.GetLength(1) -1) 
-    return i = false;
-else return i = true;
+    return false;
+else return true;
 }
 
 
@@ -55,9 +54,9 @@ int [,] NewArr () //генератор двумерного массива
 {
     int row = 2;
     int col = 2;
-    row = new Random().Next(2, 20);
+    row = new Random().Next(2, 21);
                
-    col = new Random().Next(2, 20);
+    col = new Random().Next(2, 21);
               
     int[,] res = new int[row,col];
     for (int i = 0; i < row; i++)
